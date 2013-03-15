@@ -1,0 +1,88 @@
+/* =resets
+	--------------------------------------------- */
+
+* { margin: 0; padding: 0; }
+ul { list-style: none; }
+nav { display: block; }
+
+/* =general
+	--------------------------------------------- */
+
+@font-face {
+	font-family: Bauhaus;
+	src: url('Bauhaus.ttf');
+}
+
+body {
+	font-family: Bauhaus, sans-serif;
+	background: #20123a;
+}
+
+/* The Big 'O' */
+nav#main {
+	position: relative;
+	top: 50px;
+	width: 640px;
+	height: 480px;
+	float: left;
+	background: url('images/o.png') no-repeat;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(45deg);
+}
+
+nav#main ul {
+	margin-left: 320px;
+	width: 320px;
+	position: absolute;
+	top: 160px;
+	left: -140px;
+	text-align: left;
+}
+
+nav#main a {
+	display: block;
+	color: white;
+	font-size: 3em;
+	text-decoration: none;
+}
+
+nav#main a:hover {
+	color: #7ac243;
+}
+
+/* The 'p' and the "ly" to complete the "Poly" */
+nav#main:before, nav#main:after {
+	display: block;
+	position: absolute;
+	top: 160px;
+	color: #522e91;
+	font-size: 10em;
+}
+
+nav#main:before {
+	content: "p";
+}
+
+nav#main:after {
+	left: 555px;	
+	content: "ly";
+}
+
+/* The descriptive phrases */
+div#phrases {
+	width: 600px;
+	position: relative;
+	top: 170px;
+	left: 570px;
+	color: white;
+	font-size: 3em;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+div#phrases p:first-child {
+	font-size: 0.6em;
+	color: rgba(255,255,255,0.5);
+}
