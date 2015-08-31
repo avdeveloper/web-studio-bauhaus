@@ -28,7 +28,7 @@ nav#main {
 	background: url('images/o.png') no-repeat;
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
-	transform: rotate(45deg);
+	transform: rotate(-45deg);
 }
 
 nav#main ul {
